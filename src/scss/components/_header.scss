@@ -1,5 +1,5 @@
 .header {
-  background: var(--color-light);
+  background-color: var(--color-light);
   box-shadow: 11px 11px 25px rgba(9, 7, 37, 0.06);
   &__container {
     @include flex-all-sb;

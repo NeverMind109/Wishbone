@@ -1,7 +1,7 @@
 .hero {
   @include flex-all-sb;
 
-  background: var(--color-ebb);
+  background-color: var(--color-ebb);
   &__content {
     padding: 121px 0 113px 100px;
   }

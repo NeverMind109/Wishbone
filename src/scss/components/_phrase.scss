@@ -1,6 +1,6 @@
 .phrase {
   @include bg-cover;
-
+  background-color: var(--color-light);
   padding: 265px 75px;
   &--house {
     background-image: url("../img/house-bg.jpg");
