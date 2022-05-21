@@ -1,3 +1,5 @@
 /node_modules
 /app
+phpmailer
+mail.php
 README.md

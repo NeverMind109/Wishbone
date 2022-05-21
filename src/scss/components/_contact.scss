@@ -1,0 +1,19 @@
+.contact {
+  background-color: var(--color-silver);
+  &__container {
+    @include flex-all-sb;
+
+    padding: var(--middle-offset) var(--container-offset) 118px;
+  }
+  &__content {
+    max-width: 570px;
+  }
+  &__uppertext {
+    line-height: 14px;
+    color: var(--color-pine);
+  }
+  &__title {
+    font-size: 40px;
+    color: var(--color-cod);
+  }
+}

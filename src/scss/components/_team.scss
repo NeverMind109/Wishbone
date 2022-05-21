@@ -1,0 +1,36 @@
+.team {
+  background-color: var(--color-light);
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    padding: var(--middle-offset) var(--container-offset);
+  }
+  &__content {
+    margin-right: 35px;
+  }
+  &__title {
+    color: var(--color-merlin);
+    margin-bottom: 14px;
+  }
+  &__descr {
+    width: 360px;
+    font-size: 15px;
+    color: var(--color-pine);
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__item {
+    width: 50%;
+    margin-bottom: 36px;
+    &:last-child {
+      margin-bottom: 19px;
+    }
+  }
+  &__author {
+    padding: 8px 0;
+  }
+}

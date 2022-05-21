@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--color-light);
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--big-offset) var(--container-offset);
+  }
+  &__content {
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__text {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-pine);
+  }
+  &__social {
+  }
+}
