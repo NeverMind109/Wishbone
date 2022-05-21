@@ -2,8 +2,24 @@
   @include flex-all-sb;
 
   background-color: var(--color-ebb);
+
+  @include tablet {
+    flex-direction: column;
+    padding: 20px var(--container-offset);
+  }
   &__content {
     padding: 121px 0 113px 100px;
+
+    @include big-desktop {
+      width: 45%;
+      padding: 100px 0 100px 50px;
+    }
+    @include tablet {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 25px;
+    }
   }
   &__uppertext {
     color: var(--color-pine);
@@ -15,11 +31,23 @@
     line-height: 70px;
     color: var(--color-cod);
     margin-bottom: 18px;
+
+    @include big-desktop {
+      max-width: none;
+    }
+    @include mobile {
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
   &__descr {
     max-width: 510px;
     color: var(--color-merlin);
     margin-bottom: 37px;
+
+    @include big-desktop {
+      max-width: none;
+    }
   }
   &__link {
     letter-spacing: 0.4px;
@@ -27,8 +55,19 @@
   &__image {
     width: 50%;
     font-size: 0;
+
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      height: 200px;
+    }
   }
   &__img {
     width: 100%;
+
+    @include mobile {
+      height: 100%;
+    }
   }
 }

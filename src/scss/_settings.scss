@@ -130,20 +130,40 @@ a {
   line-height: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .section-title {
   font-size: 32px;
   line-height: 38px;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 28px;
+  }
   &--big {
     font-size: 39px;
     line-height: 42px;
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
 
 .descr {
   font-size: 16px;
   line-height: 24px;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .btn {
@@ -164,6 +184,15 @@ a {
       background: transparent;
       color: var(--color-black);
     }
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @include mini-mobile {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
