@@ -1,0 +1,28 @@
+.person {
+  display: flex;
+  align-items: center;
+  &__image {
+    height: 84px;
+  }
+  &__img {
+    width: 84px;
+    height: 100%;
+    border: 3px solid var(--color-silver);
+    border-radius: 64px;
+  }
+  &__descr {
+    padding-left: 30px;
+  }
+  &__name {
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--color-cod);
+  }
+  &__position {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--color-pine);
+  }
+}

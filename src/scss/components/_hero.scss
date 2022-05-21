@@ -1,0 +1,34 @@
+.hero {
+  @include flex-all-sb;
+
+  background: var(--color-ebb);
+  &__content {
+    padding: 121px 0 113px 100px;
+  }
+  &__uppertext {
+    color: var(--color-pine);
+    margin-bottom: 20px;
+  }
+  &__title {
+    max-width: 420px;
+    font-size: 64px;
+    line-height: 70px;
+    color: var(--color-cod);
+    margin-bottom: 18px;
+  }
+  &__descr {
+    max-width: 510px;
+    color: var(--color-merlin);
+    margin-bottom: 37px;
+  }
+  &__link {
+    letter-spacing: 0.4px;
+  }
+  &__image {
+    width: 50%;
+    font-size: 0;
+  }
+  &__img {
+    width: 100%;
+  }
+}
