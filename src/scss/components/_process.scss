@@ -1,0 +1,35 @@
+.process {
+  &__container {
+    padding: var(--middle-offset) var(--container-offset);
+  }
+  &__uppertext {
+    color: var(--color-pine);
+    margin-bottom: 13px;
+  }
+  &__title {
+    color: var(--color-cod);
+    margin-bottom: 47px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 42px;
+  }
+  &__item {
+    max-width: 300px;
+  }
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__heading {
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--color-merlin);
+    margin-bottom: 10px;
+  }
+  &__descr {
+    font-size: 16px;
+    color: var(--color-pine);
+  }
+}
