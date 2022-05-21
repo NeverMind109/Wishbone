@@ -13,10 +13,11 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    padding: 0 42px;
+    padding: 0 27px;
   }
   &__item {
-    max-width: 300px;
+    max-width: 324px;
+    padding-bottom: 10px;
   }
   &__img {
     margin-bottom: 15px;

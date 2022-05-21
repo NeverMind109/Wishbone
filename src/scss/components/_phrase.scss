@@ -1,0 +1,32 @@
+.phrase {
+  @include bg-cover;
+
+  padding: 265px 75px;
+  &--house {
+    background-image: url("../img/house-bg.jpg");
+  }
+  &--marble-staircase {
+    background-image: url("../img/marble-staircase-bg.jpg");
+  }
+  &--swirling-staircase {
+    background-image: url("../../img/swirling-staircase-bg.jpg");
+    padding: 265px 60px;
+  }
+  &__content {
+    max-width: 285px;
+    margin-left: auto;
+    &--swirling-staircase {
+      margin-left: 0;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-merlin);
+  }
+  &__descr {
+    color: var(--color-pine);
+  }
+}
