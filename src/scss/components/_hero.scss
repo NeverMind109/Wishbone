@@ -2,11 +2,6 @@
   @include flex-all-sb;
 
   background-color: var(--color-ebb);
-
-  @include tablet {
-    flex-direction: column;
-    padding: 20px var(--container-offset);
-  }
   &__content {
     padding: 121px 0 113px 100px;
 
@@ -55,8 +50,17 @@
   &__image {
     width: 50%;
     font-size: 0;
+    picture {
+      @include tablet {
+        height: 500px;
+      }
+      @include mobile {
+        height: 200px;
+      }
+    }
 
     @include tablet {
+      height: 500px;
       width: 100%;
     }
     @include mobile {
@@ -66,8 +70,14 @@
   &__img {
     width: 100%;
 
-    @include mobile {
+    @include tablet {
       height: 100%;
+      width: 100%;
     }
+  }
+
+  @include tablet {
+    flex-direction: column;
+    padding: 20px var(--container-offset) 0;
   }
 }

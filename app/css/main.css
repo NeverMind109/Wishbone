@@ -517,15 +517,6 @@ a {
   justify-content: space-between;
   background-color: var(--color-ebb);
 }
-@media (max-width: 1024px) {
-  .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 20px var(--container-offset);
-  }
-}
 .hero__content {
   padding: 121px 0 113px 100px;
 }
@@ -583,7 +574,18 @@ a {
   font-size: 0;
 }
 @media (max-width: 1024px) {
+  .hero__image picture {
+    height: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__image picture {
+    height: 200px;
+  }
+}
+@media (max-width: 1024px) {
   .hero__image {
+    height: 500px;
     width: 100%;
   }
 }
@@ -595,9 +597,19 @@ a {
 .hero__img {
   width: 100%;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .hero__img {
     height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px var(--container-offset) 0;
   }
 }
 
@@ -680,6 +692,9 @@ a {
 }
 .phrase--house {
   background-image: url("../img/house-bg.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/house-bg.avif" type("image/avif"), "../img/house-bg.webp" type("image/webp"), "../img/house-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/house-bg.avif" type("image/avif"), "../img/house-bg.webp" type("image/webp"), "../img/house-bg.jpg" type("image/jpg"));
 }
 @media (max-width: 1024px) {
   .phrase--house {
@@ -694,6 +709,9 @@ a {
 }
 .phrase--marble-staircase {
   background-image: url("../img/marble-staircase-bg.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/marble-staircase-bg.avif" type("image/avif"), "../img/marble-staircase-bg.webp" type("image/webp"), "../img/marble-staircase-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/marble-staircase-bg.avif" type("image/avif"), "../img/marble-staircase-bg.webp" type("image/webp"), "../img/marble-staircase-bg.jpg" type("image/jpg"));
 }
 @media (max-width: 1024px) {
   .phrase--marble-staircase {
@@ -708,6 +726,9 @@ a {
 }
 .phrase--swirling-staircase {
   background-image: url("../img/swirling-staircase-bg.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/swirling-staircase-bg.avif" type("image/avif"), "../img/swirling-staircase-bg.webp" type("image/webp"), "../img/swirling-staircase-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/swirling-staircase-bg.avif" type("image/avif"), "../img/swirling-staircase-bg.webp" type("image/webp"), "../img/swirling-staircase-bg.jpg" type("image/jpg"));
   padding: 215px 60px;
 }
 @media (max-width: 1024px) {

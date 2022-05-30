@@ -25,13 +25,18 @@
       </p>
       <div class="firm__author person">
         <div class="person__image">
-          <img
-            class="person__img"
-            src="img/person-1.jpg"
-            alt="Stephen Collier"
-            width="84"
-            height="84"
-          />
+          <picture>
+            <source srcset="img/person-1.avif" type="image/avif" />
+            <source srcset="img/person-1.webp" type="image/webp" />
+            <img
+              class="person__img"
+              loading="lazy"
+              src="img/person-1.jpg"
+              width="84"
+              height="84"
+              alt="Stephen Collier"
+            />
+          </picture>
         </div>
         <div class="person__descr">
           <span class="person__name">Stephen Collier</span>

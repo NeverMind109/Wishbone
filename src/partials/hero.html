@@ -11,6 +11,16 @@
     <a class="btn btn--secondary hero__link" href="#">Read more</a>
   </div>
   <div class="hero__image">
-    <img class="hero__img" src="img/hero-img.jpg" alt="" />
+    <picture>
+      <source srcset="img/hero-img.avif" type="image/avif" />
+      <source srcset="img/hero-img.webp" type="image/webp" />
+      <img
+        class="hero__img"
+        src="img/hero-img.jpg"
+        width="720"
+        height="720"
+        alt=""
+      />
+    </picture>
   </div>
 </section>

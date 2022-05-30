@@ -3,6 +3,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
   <title>Wishbone + Partners</title>
@@ -78,7 +79,17 @@
     <a class="btn btn--secondary hero__link" href="#">Read more</a>
   </div>
   <div class="hero__image">
-    <img class="hero__img" src="img/hero-img.jpg" alt="" />
+    <picture>
+      <source srcset="img/hero-img.avif" type="image/avif" />
+      <source srcset="img/hero-img.webp" type="image/webp" />
+      <img
+        class="hero__img"
+        src="img/hero-img.jpg"
+        width="720"
+        height="720"
+        alt=""
+      />
+    </picture>
   </div>
 </section>
  <section class="firm" id="about">
@@ -108,13 +119,18 @@
       </p>
       <div class="firm__author person">
         <div class="person__image">
-          <img
-            class="person__img"
-            src="img/person-1.jpg"
-            alt="Stephen Collier"
-            width="84"
-            height="84"
-          />
+          <picture>
+            <source srcset="img/person-1.avif" type="image/avif" />
+            <source srcset="img/person-1.webp" type="image/webp" />
+            <img
+              class="person__img"
+              loading="lazy"
+              src="img/person-1.jpg"
+              width="84"
+              height="84"
+              alt="Stephen Collier"
+            />
+          </picture>
         </div>
         <div class="person__descr">
           <span class="person__name">Stephen Collier</span>
@@ -135,13 +151,24 @@
 </section>
  <section class="process">
   <div class="container process__container">
-    <h4 class="title-uppertext process__uppertext centered">Our process</h4>
+    <div class="title-uppertext process__uppertext centered">Our process</div>
     <h2 class="section-title-big process__title centered">
       How we do what we do.
     </h2>
     <ul class="list-reset process__list">
       <li class="process__item centered">
-        <img class="process__img" src="img/process-1.jpg" alt="Sketching" />
+        <picture>
+          <source srcset="img/process-1.avif" type="image/avif" />
+          <source srcset="img/process-1.webp" type="image/webp" />
+          <img
+            class="process__img"
+            loading="lazy"
+            src="img/process-1.jpg"
+            width="117"
+            height="102"
+            alt="Sketching"
+          />
+        </picture>
         <span class="process__heading">Sketching</span>
         <p class="descr process__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
@@ -150,7 +177,18 @@
         </p>
       </li>
       <li class="process__item centered">
-        <img class="process__img" src="img/process-2.jpg" alt="Finalizing" />
+        <picture>
+          <source srcset="img/process-2.avif" type="image/avif" />
+          <source srcset="img/process-2.webp" type="image/webp" />
+          <img
+            class="process__img"
+            loading="lazy"
+            src="img/process-2.jpg"
+            width="117"
+            height="102"
+            alt="Finalizing"
+          />
+        </picture>
         <span class="process__heading">Finalizing</span>
         <p class="descr process__descr">
           Adipiscing elit. Nulla ut tristique libero. Nulla vitae tempor leo
@@ -158,7 +196,18 @@
         </p>
       </li>
       <li class="process__item centered">
-        <img class="process__img" src="img/process-3.jpg" alt="Building" />
+        <picture>
+          <source srcset="img/process-3.avif" type="image/avif" />
+          <source srcset="img/process-3.webp" type="image/webp" />
+          <img
+            class="process__img"
+            loading="lazy"
+            src="img/process-3.jpg"
+            width="117"
+            height="102"
+            alt="Building"
+          />
+        </picture>
         <span class="process__heading">Building</span>
         <p class="descr process__descr">
           Nulla ut tristique libero. Lorem ipsum ut tristique libero. Nulla
@@ -181,7 +230,7 @@
         <section class="clients">
   <div class="container clients__container">
     <div class="clients__content">
-      <h4 class="title-uppertext clients__uppertext">prior clients</h4>
+      <div class="title-uppertext clients__uppertext">prior clients</div>
       <h2 class="section-title clients__title">Happy customers.</h2>
       <p class="descr clients__descr">
         Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
@@ -191,29 +240,37 @@
     </div>
     <ul class="list-reset clients__list">
       <li class="clients__item">
-        <a class="clients__link" href="#">
-          <svg class="">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Hill & Hayers Company Page"
+        >
+          <svg>
             <use xlink:href="img/sprite.svg#client-1"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
-          <svg class="">
+        <a class="clients__link" href="#" aria-label="Riksgransen Company Page">
+          <svg>
             <use xlink:href="img/sprite.svg#client-2"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
-          <svg class="">
+        <a class="clients__link" href="#" aria-label="Studio Cai Company Page">
+          <svg>
             <use xlink:href="img/sprite.svg#client-3"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
-          <svg class="">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Chill Industries Company Page"
+        >
+          <svg>
             <use xlink:href="img/sprite.svg#client-4"></use>
           </svg>
         </a>
@@ -241,13 +298,18 @@
     <ul class="list-reset projects__list">
       <li class="projects__item">
         <article class="projects__article">
-          <img
-            class="projects__img"
-            src="img/project-1.jpg"
-            alt=""
-            width="379"
-            height="460"
-          />
+          <picture>
+            <source srcset="img/project-1.avif" type="image/avif" />
+            <source srcset="img/project-1.webp" type="image/webp" />
+            <img
+              class="projects__img"
+              loading="lazy"
+              src="img/project-1.jpg"
+              width="379"
+              height="460"
+              alt="Big Road Brewery"
+            />
+          </picture>
           <div class="projects__info">
             <div class="projects__info-top">
               <span class="title-uppertext projects__label">New York</span>
@@ -261,13 +323,18 @@
       </li>
       <li class="projects__item">
         <article class="projects__article">
-          <img
-            class="projects__img"
-            src="img/project-2.jpg"
-            alt=""
-            width="379"
-            height="460"
-          />
+          <picture>
+            <source srcset="img/project-2.avif" type="image/avif" />
+            <source srcset="img/project-2.webp" type="image/webp" />
+            <img
+              class="projects__img"
+              loading="lazy"
+              src="img/project-2.jpg"
+              width="379"
+              height="460"
+              alt="Big Road Brewery"
+            />
+          </picture>
           <div class="projects__info">
             <div class="projects__info-top">
               <span class="title-uppertext projects__label">New York</span>
@@ -281,13 +348,18 @@
       </li>
       <li class="projects__item">
         <article class="projects__article">
-          <img
-            class="projects__img"
-            src="img/project-3.jpg"
-            alt=""
-            width="379"
-            height="460"
-          />
+          <picture>
+            <source srcset="img/project-3.avif" type="image/avif" />
+            <source srcset="img/project-3.webp" type="image/webp" />
+            <img
+              class="projects__img"
+              loading="lazy"
+              src="img/project-3.jpg"
+              width="379"
+              height="460"
+              alt="Big Road Brewery"
+            />
+          </picture>
           <div class="projects__info">
             <div class="projects__info-top">
               <span class="title-uppertext projects__label">New York</span>
@@ -321,13 +393,18 @@
       <li class="team__item">
         <div class="team__author person">
           <div class="person__image">
-            <img
-              class="person__img"
-              src="img/person-1.jpg"
-              alt="Stephen Collier"
-              width="84"
-              height="84"
-            />
+            <picture>
+              <source srcset="img/person-1.avif" type="image/avif" />
+              <source srcset="img/person-1.webp" type="image/webp" />
+              <img
+                class="person__img"
+                loading="lazy"
+                src="img/person-1.jpg"
+                width="84"
+                height="84"
+                alt="Stephen Collier"
+              />
+            </picture>
           </div>
           <div class="person__descr">
             <span class="person__name">Stephen Collier</span>
@@ -338,13 +415,18 @@
       <li class="team__item">
         <div class="team__author person">
           <div class="person__image">
-            <img
-              class="person__img"
-              src="img/person-2.jpg"
-              alt="Nolan Peters"
-              width="84"
-              height="84"
-            />
+            <picture>
+              <source srcset="img/person-2.avif" type="image/avif" />
+              <source srcset="img/person-2.webp" type="image/webp" />
+              <img
+                class="person__img"
+                loading="lazy"
+                src="img/person-2.jpg"
+                width="84"
+                height="84"
+                alt="Nolan Peters"
+              />
+            </picture>
           </div>
           <div class="person__descr">
             <span class="person__name">Nolan Peters</span>
@@ -355,13 +437,18 @@
       <li class="team__item">
         <div class="team__author person">
           <div class="person__image">
-            <img
-              class="person__img"
-              src="img/person-3.jpg"
-              alt="Ferris Wonder"
-              width="84"
-              height="84"
-            />
+            <picture>
+              <source srcset="img/person-3.avif" type="image/avif" />
+              <source srcset="img/person-3.webp" type="image/webp" />
+              <img
+                class="person__img"
+                loading="lazy"
+                src="img/person-3.jpg"
+                width="84"
+                height="84"
+                alt="Ferris Wonder"
+              />
+            </picture>
           </div>
           <div class="person__descr">
             <span class="person__name">Ferris Wonder</span>
@@ -372,13 +459,18 @@
       <li class="team__item">
         <div class="team__author person">
           <div class="person__image">
-            <img
-              class="person__img"
-              src="img/person-4.jpg"
-              alt="Aria Stone"
-              width="84"
-              height="84"
-            />
+            <picture>
+              <source srcset="img/person-4.avif" type="image/avif" />
+              <source srcset="img/person-4.webp" type="image/webp" />
+              <img
+                class="person__img"
+                loading="lazy"
+                src="img/person-4.jpg"
+                width="84"
+                height="84"
+                alt="Aria Stone"
+              />
+            </picture>
           </div>
           <div class="person__descr">
             <span class="person__name">Aria Stone</span>
@@ -389,13 +481,18 @@
       <li class="team__item">
         <div class="team__author person">
           <div class="person__image">
-            <img
-              class="person__img"
-              src="img/person-5.jpg"
-              alt="Niko Ferry"
-              width="84"
-              height="84"
-            />
+            <picture>
+              <source srcset="img/person-5.avif" type="image/avif" />
+              <source srcset="img/person-5.webp" type="image/webp" />
+              <img
+                class="person__img"
+                loading="lazy"
+                src="img/person-5.jpg"
+                width="84"
+                height="84"
+                alt="Niko Ferry"
+              />
+            </picture>
           </div>
           <div class="person__descr">
             <span class="person__name">Niko Ferry</span>
@@ -410,7 +507,7 @@
         <section class="contact" id="contact">
   <div class="container contact__container">
     <div class="contact__content">
-      <h4 class="title-uppertext contact__uppertext">Get in touch</h4>
+      <div class="title-uppertext contact__uppertext">Get in touch</div>
       <h2 class="section-title-big contact__title">
         Think we would be a good fit for your next project?
       </h2>

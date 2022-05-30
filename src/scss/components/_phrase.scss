@@ -3,7 +3,7 @@
   background-color: var(--color-light);
   padding: 265px 75px;
   &--house {
-    background-image: url("../img/house-bg.jpg");
+    @include image-set("../img/house-bg");
 
     @include tablet {
       padding: 295px 30px 190px;
@@ -14,7 +14,7 @@
     }
   }
   &--marble-staircase {
-    background-image: url("../img/marble-staircase-bg.jpg");
+    @include image-set("../img/marble-staircase-bg");
 
     @include tablet {
       padding: 215px 30px;
@@ -25,7 +25,7 @@
     }
   }
   &--swirling-staircase {
-    background-image: url("../img/swirling-staircase-bg.jpg");
+    @include image-set("../img/swirling-staircase-bg");
     padding: 215px 60px;
 
     @include tablet {
